@@ -139,8 +139,6 @@ The trash view includes dismissed or expired proposals and retained `promoted` h
 
 With background extraction enabled, extraction agents read eligible conversations from a connected Redis Agent Memory store. They can create FAQ proposals or attach evidence to existing open proposals for review.
 
-Extraction is opt-in. An administrator must configure the source connection and enable extraction on a deployment that supports it. Proposal permissions alone do not configure or start extraction.
-
-<!-- TODO: Link to source connection and extraction setup when Agent Playbooks operator guidance exists. -->
+Extraction is opt-in. An administrator must [configure the source connection and extraction worker]({{< relref "/operate/iris/agent-playbook/self-managed/extraction" >}}). Proposal permissions alone do not configure or start extraction.
 
 Review extracted candidates in the same inbox. Check their sources, answers, and audiences before accepting and publishing. Extraction does not publish answers automatically or extract skills.
